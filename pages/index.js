@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import Feedback from './feedback';
 
 function HomePage () {
   const emailInputRef = useRef();

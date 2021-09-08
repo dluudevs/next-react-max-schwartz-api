@@ -3,11 +3,11 @@
 import path from 'path';
 import fs from 'fs';
 
-const getFeedbackFilePath = () => {
+export const getFeedbackFilePath = () => {
   return path.join(process.cwd(), 'data', 'feedback.json');
 }
 
-const parseFeedback = ( filePath ) => {
+export const parseFeedback = ( filePath ) => {
   const fileData = fs.readFileSync(filePath);
   const data = JSON.parse(fileData);
   return data;
